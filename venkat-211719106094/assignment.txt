@@ -1,0 +1,11 @@
+import random
+import time
+
+while(True):
+    temp=random.randint(10,99)
+    hum=random.randint(10,99)
+    if(temp>35 and hum>60):
+        print("high temperature and humidity of:",temp,hum,"%","alarm is on")
+    elif(temp<35 and hum<60):
+        print("Normal temperature and humidity of:",temp,hum,"%","alarm is off")
+    time.sleep(1)
